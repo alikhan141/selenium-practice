@@ -1,0 +1,30 @@
+# Maven target directory
+target/
+
+# IntelliJ / VS Code settings
+.idea/
+*.iml
+.vscode/
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# JARs/WARs (if you're not tracking them)
+*.jar
+*.war
+*.ear
+
+# Test output
+surefire-reports/
+test-output/
+
+# Environment files
+.env
+*.db
