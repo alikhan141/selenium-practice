@@ -37,10 +37,23 @@ public class scope_limited {
         Actions action = new Actions(driver);
 
         // clicking on the each element on a tag
+        String mainWindow = driver.getWindowHandle();
         for (int i = 1; i < footerlinks.size(); i++) {
             WebElement link = footerlinks.get(i);
+            // Open link in new tab
+            action.keyDown(org.openqa.selenium.Keys.CONTROL).click(link).keyUp(org.openqa.selenium.Keys.CONTROL).build()
+                    .perform();
 
         }
+
+        // Get all window handles
+        List<String> windowHandles = driver.getWindowHandles().stream().toList();
+        for (String handle : windowHandles) {
+            driver.switchTo().window(handle);
+            System.out.println(driver.getTitle());
+        }
+        // Switch back to main window
+        driver.switchTo().window(mainWindow);
 
         driver.quit();
 
