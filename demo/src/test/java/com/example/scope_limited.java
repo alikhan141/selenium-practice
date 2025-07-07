@@ -41,7 +41,6 @@ public class scope_limited {
         for (int i = 1; i < footerlinks.size(); i++) {
             String clicker = Keys.chord(Keys.CONTROL, Keys.ENTER);
             footerlinks.get(i).sendKeys(clicker);
-            Thread.sleep(1000); // Give time for the tab to open
         }
 
         // Now, after all tabs are open, get all window handles and print their titles
