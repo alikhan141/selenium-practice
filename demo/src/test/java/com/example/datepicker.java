@@ -36,7 +36,6 @@ public class datepicker {
         for (int i = 0; i < actualList.size(); i++) {
             System.out.println(actualList.get(i).getAttribute("value"));
             Assert.assertEquals(actualList.get(i).getAttribute("value"), expectedList[i]);
-
         }
         driver.quit();
     }
