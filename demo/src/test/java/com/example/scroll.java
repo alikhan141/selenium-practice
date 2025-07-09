@@ -40,7 +40,6 @@ public class scroll {
         String[] split = value.split(":");
         String extracted_value = split[1].trim();
         int final_value = Integer.parseInt(extracted_value);
-
         Assert.assertEquals(sum, final_value);
         driver.quit();
 
