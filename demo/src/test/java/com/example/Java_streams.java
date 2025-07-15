@@ -20,7 +20,7 @@ public class Java_streams {
         // }
         // System.out.println(count);
         int final_name = (int) names.stream().filter(s -> s.startsWith("A")).count();
-        Stream.of("apple", "banana", "orange");
-
+        long count = Stream.of("Ali", "Arsalan", "Muneeb", "Ahmed", "Ismail").filter(s -> s.startsWith("A")).count();
+        System.out.println(count);
     }
 }
